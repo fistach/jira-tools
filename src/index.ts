@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
-const program = require('commander');
+import program = require('commander');
+
+const VERSION = '0.0.1';
+const DESCRIPTION = 'Jira toolbox';
 
 program
-    .version('0.0.1')
-    .description('Jira toolbox');
+    .version(VERSION)
+    .description(DESCRIPTION);
 
 program
     .command('encode <text>')
-    .action((text) => {
+    .action((text: string) => {
         console.log(Buffer.from(text).toString('base64'));
     });
 
