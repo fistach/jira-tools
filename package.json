@@ -1,10 +1,11 @@
 {
   "name": "jira-tools",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Set of tools for extracting data from Jira issues",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
     "test": "test"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "request-promise-native": "1.0.5"
   },
   "devDependencies": {
-    "jest": "22.4.3"
+    "jest": "22.4.3",
+    "typescript": "2.8.3"
   }
 }
